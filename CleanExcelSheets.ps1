@@ -16,10 +16,10 @@
 
 
 
-$P = Import-Csv -Path "C:\Users\yikai\Downloads\288883.csv" | Where-Object  {$_.Note -CNotMatch "This HEAD does not contain a title element" -and 
+$P = Import-Csv -Path "C:\Downloads\288883.csv" | Where-Object  {$_.Note -CNotMatch "This HEAD does not contain a title element" -and 
 $_.Note -CNotMatch "This LINK has an id attribute of 'font-awesome-5-kit-css', which is not unique" -and 
 $_.Note -CNotMatch "This INPUT has an id attribute of" -and
-$_.Note -CNotMatch "carouselSS"} | Export-Csv -Path "C:\Users\yikai\Downloads\New1.csv"
+$_.Note -CNotMatch "carouselSS"} | Export-Csv -Path "C:\Downloads\New1.csv"
 
 
 #literally, it's to format the excel table, not sure if it's actully nessecary 
